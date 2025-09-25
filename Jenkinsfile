@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage('checking'){
             steps{
-                git branch:'master', url:''
+                git branch:'master', url:'https://github.com/ErkkilaT/OTP1_Week6_Assignment.git'
             }
         }
         stage('build'){
