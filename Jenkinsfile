@@ -3,19 +3,20 @@ pipeline{
     tools{
         maven 'Maven3'
     }
-
     stages{
         stage('checking'){
             steps{
-                git branch:'master', url:'https://github.com/ErkkilaT/OTP1_Week6_Assignment.git'
+                git branch:'master', url:'https://github.com/ADirin/livedemo_week6_sep1.git'
             }
         }
-        stage('build'){
-            steps{
-                mvn clean install
+
+        stage ('build'){
+            steps {
+              bat  'mvn clean install'
             }
         }
-        stage('Test') {
+
+  stage('Test') {
             steps {
                 bat 'mvn test'
             }
@@ -37,4 +38,6 @@ pipeline{
         }
 
     }
+
+
 }
