@@ -7,7 +7,7 @@ pipeline {
         // Define Docker Hub credentials ID
         DOCKERHUB_CREDENTIALS_ID = 'Docker_hub'
         // Define Docker Hub repository name
-        DOCKERHUB_REPO = 'oomis1/week6_inclass_test1:latest'
+        DOCKERHUB_REPO = 'oomis1/week6_inclass_test1'
         // Define Docker image tag
         DOCKER_IMAGE_TAG = 'latest'
     }
